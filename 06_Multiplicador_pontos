@@ -1,0 +1,5 @@
+def nome_funcao(n):
+    return lambda a : a * n
+    
+multiplicador = nome_funcao(6) # Valor pelo qual os pontos serão multiplicados
+print(multiplicador(10))
