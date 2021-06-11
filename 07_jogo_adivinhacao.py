@@ -10,7 +10,7 @@ Original file is located at
 import random
 n = random.randint(1,99)
 adivinhe = int(input('Tente adivinhar um núemero entre 1 e 99'))
-while n != 'adivinhe': # Enquanto o n for diferente da variável adivinhe
+while n != adivinhe: # Enquanto o n for diferente da variável adivinhe
     if adivinhe < n:
         print('O número é maior que este')
         adivinhe = int(input('Tente outra vez:'))
@@ -18,5 +18,5 @@ while n != 'adivinhe': # Enquanto o n for diferente da variável adivinhe
         print('O número é menor que este')
         adivinhe = int(input('Tente outra vez:'))
     else:
-        print ('Você acertou!')
+        print('Você acertou!')
         break # Serve para 'parar o loop
